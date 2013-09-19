@@ -1,4 +1,4 @@
-module TaskMapper
+class TaskMapper
   module Provider
     module Trello
       VERSION = "0.0.1"
