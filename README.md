@@ -16,6 +16,21 @@ trello = TaskMapper.new(
 )
 ```
 
+To find your `developer_public_key`, go to
+[https://trello.com/1/appKey/generate][key].
+
+To get a `member_token` you can use ad infinitum, modify this URL and visit it in
+a browser:
+
+    https://trello.com/1/authorize?key=APPLICATION_KEY&scope=read%2Cwrite&name=taskmapper-trello&expiration=never&response_type=token
+
+After confirming, you'll be given a `member_token` that should not
+expire.
+
+
+[key]: https://trello.com/1/appKey/generate#
+[token]: https://trello.com/1/appKey/generate#
+
 ### Finding Projects(Boards)
 
 You can find your own projects by using:
