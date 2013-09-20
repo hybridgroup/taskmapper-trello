@@ -11,15 +11,15 @@ def fixture_file(filename)
 end
 
 def key
-  "7843f5d1a8776c7ee82d2581f1c5bbb1"
+  "SECRET_KEY"
 end
 
 def token
-  "bfa816ae1fc6966f732ad90ae924d36a65fbf8eb2798216d2ee22321a04f5c8f"
+  "SECRET_TOKEN"
 end
 
 def username
-  "andrew_stewart"
+  "test_user"
 end
 
 def stub_request(method, url, filename, status=nil)

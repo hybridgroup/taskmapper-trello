@@ -18,6 +18,11 @@ module TaskMapper::Provider
           boards = TaskMapper::Provider::Trello.api.boards
           boards.map { |board| self.new board.attributes }
         end
+
+        def find_by_id(id)
+          board = TaskMapper::Provider::Trello.api.boards.find { |f| f.id == id}
+          self.new board.attributes
+        end
       end
     end
   end
