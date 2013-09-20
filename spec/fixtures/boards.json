@@ -1,0 +1,353 @@
+[
+  {
+    "id": "4f26e22814cd935006633fd9",
+    "name": "Classes",
+    "desc": "",
+    "descData": null,
+    "closed": true,
+    "idOrganization": "",
+    "invited": false,
+    "pinned": true,
+    "url": "https:\/\/trello.com\/b\/hXRaLTzn\/classes",
+    "prefs": {
+      "permissionLevel": "private",
+      "voting": "disabled",
+      "comments": "members",
+      "invitations": "members",
+      "selfJoin": false,
+      "cardCovers": true,
+      "backgroundColor": "#205C7E",
+      "backgroundImage": null,
+      "backgroundImageScaled": null,
+      "bg": "blue",
+      "canBePublic": true,
+      "canBeOrg": true,
+      "canBePrivate": true,
+      "canInvite": true
+    },
+    "invitations": [
+
+    ],
+    "memberships": [
+      {
+        "id": "4f26e22814cd935006633fe0",
+        "idMember": "4ea4f9b1ad8ba68c10013887",
+        "memberType": "admin",
+        "deactivated": false,
+        "unconfirmed": false
+      }
+    ],
+    "shortLink": "hXRaLTzn",
+    "subscribed": false,
+    "labelNames": {
+      "yellow": "Class 274 - Internet Scripting",
+      "red": "Class 280 - Advanced Wide Area Technologies",
+      "purple": "Class 288 - Database Administration and Design",
+      "orange": "Class 278 - Internet Server Management",
+      "green": "Class 264 - Technology & Human Management",
+      "blue": ""
+    },
+    "powerUps": [
+
+    ],
+    "dateLastActivity": null,
+    "dateLastView": "2012-02-21T19:38:39.170Z",
+    "shortUrl": "https:\/\/trello.com\/b\/hXRaLTzn"
+  },
+  {
+    "id": "4f0f2f4508f28652554231d2",
+    "name": "Main",
+    "desc": "",
+    "descData": null,
+    "closed": true,
+    "idOrganization": "",
+    "invited": false,
+    "pinned": false,
+    "url": "https:\/\/trello.com\/b\/Ul6WmOB2\/main",
+    "prefs": {
+      "permissionLevel": "private",
+      "voting": "disabled",
+      "comments": "members",
+      "invitations": "members",
+      "selfJoin": false,
+      "cardCovers": true,
+      "backgroundColor": "#205C7E",
+      "backgroundImage": null,
+      "backgroundImageScaled": null,
+      "bg": "blue",
+      "canBePublic": true,
+      "canBeOrg": true,
+      "canBePrivate": true,
+      "canInvite": true
+    },
+    "invitations": [
+
+    ],
+    "memberships": [
+      {
+        "id": "4f0f2f4508f28652554231d9",
+        "idMember": "4ea4f9b1ad8ba68c10013887",
+        "memberType": "admin",
+        "deactivated": false,
+        "unconfirmed": false
+      },
+      {
+        "id": "4f0f334c002f1e43770ef559",
+        "idMember": "4f0e36e1d41f37e75910f8e1",
+        "memberType": "normal",
+        "deactivated": false,
+        "unconfirmed": false
+      },
+      {
+        "id": "4f0f33a0db768c194e45ea18",
+        "idMember": "4f0f3373db768c194e45dbf3",
+        "memberType": "normal",
+        "deactivated": false,
+        "unconfirmed": false
+      }
+    ],
+    "shortLink": "Ul6WmOB2",
+    "subscribed": false,
+    "labelNames": {
+      "purple": "",
+      "blue": "",
+      "green": "",
+      "yellow": "",
+      "orange": "",
+      "red": ""
+    },
+    "powerUps": [
+
+    ],
+    "dateLastActivity": null,
+    "dateLastView": "2012-04-14T05:40:19.537Z",
+    "shortUrl": "https:\/\/trello.com\/b\/Ul6WmOB2"
+  },
+  {
+    "id": "4f2ac73accc68eeb0b24fc44",
+    "name": "Health Care Unit",
+    "desc": "",
+    "descData": null,
+    "closed": true,
+    "idOrganization": "",
+    "invited": false,
+    "pinned": false,
+    "url": "https:\/\/trello.com\/b\/SF7e1ezt\/health-care-unit",
+    "prefs": {
+      "permissionLevel": "private",
+      "voting": "members",
+      "comments": "members",
+      "invitations": "members",
+      "selfJoin": true,
+      "cardCovers": true,
+      "backgroundColor": "#205C7E",
+      "backgroundImage": null,
+      "backgroundImageScaled": null,
+      "bg": "blue",
+      "canBePublic": true,
+      "canBeOrg": true,
+      "canBePrivate": true,
+      "canInvite": true
+    },
+    "invitations": [
+
+    ],
+    "memberships": [
+      {
+        "id": "4f2ac73accc68eeb0b24fc4b",
+        "idMember": "4ea4f9b1ad8ba68c10013887",
+        "memberType": "admin",
+        "deactivated": false,
+        "unconfirmed": false
+      }
+    ],
+    "shortLink": "SF7e1ezt",
+    "subscribed": false,
+    "labelNames": {
+      "purple": "",
+      "blue": "",
+      "green": "",
+      "yellow": "",
+      "orange": "",
+      "red": ""
+    },
+    "powerUps": [
+      "voting"
+    ],
+    "dateLastActivity": null,
+    "dateLastView": "2012-04-14T05:40:30.102Z",
+    "shortUrl": "https:\/\/trello.com\/b\/SF7e1ezt"
+  },
+  {
+    "id": "4f225e83ed560e771605d318",
+    "name": "Personal",
+    "desc": "",
+    "descData": null,
+    "closed": true,
+    "idOrganization": "",
+    "invited": false,
+    "pinned": true,
+    "url": "https:\/\/trello.com\/b\/zsxNiIwU\/personal",
+    "prefs": {
+      "permissionLevel": "private",
+      "voting": "disabled",
+      "comments": "members",
+      "invitations": "members",
+      "selfJoin": false,
+      "cardCovers": true,
+      "backgroundColor": "#205C7E",
+      "backgroundImage": null,
+      "backgroundImageScaled": null,
+      "bg": "blue",
+      "canBePublic": true,
+      "canBeOrg": true,
+      "canBePrivate": true,
+      "canInvite": true
+    },
+    "invitations": [
+
+    ],
+    "memberships": [
+      {
+        "id": "4f225e83ed560e771605d31f",
+        "idMember": "4ea4f9b1ad8ba68c10013887",
+        "memberType": "admin",
+        "deactivated": false,
+        "unconfirmed": false
+      }
+    ],
+    "shortLink": "zsxNiIwU",
+    "subscribed": false,
+    "labelNames": {
+      "purple": "",
+      "blue": "",
+      "green": "",
+      "yellow": "",
+      "orange": "",
+      "red": ""
+    },
+    "powerUps": [
+
+    ],
+    "dateLastActivity": null,
+    "dateLastView": "2012-02-21T19:38:46.955Z",
+    "shortUrl": "https:\/\/trello.com\/b\/zsxNiIwU"
+  },
+  {
+    "id": "4f1ef9220dc5a4633b3e9d9b",
+    "name": "Projects",
+    "desc": "",
+    "descData": null,
+    "closed": true,
+    "idOrganization": "",
+    "invited": false,
+    "pinned": true,
+    "url": "https:\/\/trello.com\/b\/C0XDDoeE\/projects",
+    "prefs": {
+      "permissionLevel": "private",
+      "voting": "disabled",
+      "comments": "members",
+      "invitations": "members",
+      "selfJoin": false,
+      "cardCovers": true,
+      "backgroundColor": "#205C7E",
+      "backgroundImage": null,
+      "backgroundImageScaled": null,
+      "bg": "blue",
+      "canBePublic": true,
+      "canBeOrg": true,
+      "canBePrivate": true,
+      "canInvite": true
+    },
+    "invitations": [
+
+    ],
+    "memberships": [
+      {
+        "id": "4f1ef9220dc5a4633b3e9da2",
+        "idMember": "4ea4f9b1ad8ba68c10013887",
+        "memberType": "admin",
+        "deactivated": false,
+        "unconfirmed": false
+      }
+    ],
+    "shortLink": "C0XDDoeE",
+    "subscribed": false,
+    "labelNames": {
+      "purple": "",
+      "blue": "",
+      "green": "",
+      "yellow": "",
+      "orange": "",
+      "red": ""
+    },
+    "powerUps": [
+
+    ],
+    "dateLastActivity": null,
+    "dateLastView": "2012-01-24T18:48:52.425Z",
+    "shortUrl": "https:\/\/trello.com\/b\/C0XDDoeE"
+  },
+  {
+    "id": "4ea4fa0cd791269d4e29a176",
+    "name": "Welcome Board",
+    "desc": "",
+    "descData": null,
+    "closed": true,
+    "idOrganization": null,
+    "invited": false,
+    "pinned": false,
+    "url": "https:\/\/trello.com\/b\/i5t3ZIBG\/welcome-board",
+    "prefs": {
+      "permissionLevel": "private",
+      "voting": "members",
+      "comments": "members",
+      "invitations": "members",
+      "selfJoin": false,
+      "cardCovers": true,
+      "backgroundColor": "#205C7E",
+      "backgroundImage": null,
+      "backgroundImageScaled": null,
+      "bg": "blue",
+      "canBePublic": true,
+      "canBeOrg": true,
+      "canBePrivate": true,
+      "canInvite": true
+    },
+    "invitations": [
+
+    ],
+    "memberships": [
+      {
+        "id": "4ea4fa0cd791269d4e29a175",
+        "idMember": "4e6a7fad05d98b02ba00845c",
+        "memberType": "normal",
+        "deactivated": false,
+        "unconfirmed": false
+      },
+      {
+        "id": "4ea4fa0cd791269d4e29a180",
+        "idMember": "4ea4f9b1ad8ba68c10013887",
+        "memberType": "admin",
+        "deactivated": false,
+        "unconfirmed": false
+      }
+    ],
+    "shortLink": "i5t3ZIBG",
+    "subscribed": false,
+    "labelNames": {
+      "purple": "",
+      "blue": "",
+      "green": "",
+      "yellow": "",
+      "orange": "",
+      "red": ""
+    },
+    "powerUps": [
+      "voting"
+    ],
+    "dateLastActivity": "2013-07-05T15:32:27.188Z",
+    "dateLastView": "2012-01-12T19:21:00.382Z",
+    "shortUrl": "https:\/\/trello.com\/b\/i5t3ZIBG"
+  }
+]

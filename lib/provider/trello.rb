@@ -3,7 +3,7 @@ module TaskMapper::Provider
     include TaskMapper::Provider::Base
 
     class << self
-      attr_accessor :developer_public_key, :member_token
+      attr_accessor :developer_public_key, :member_token, :api
     end
 
     def self.new(auth = {})
@@ -19,6 +19,8 @@ module TaskMapper::Provider
         c.developer_public_key = auth[:developer_public_key]
         c.member_token = auth[:member_token]
       end
+
+      provider.api = ::Trello::Member.find auth[:username]
     end
 
     def authorize(auth = {})
@@ -26,6 +28,10 @@ module TaskMapper::Provider
       unless auth[:developer_public_key] && auth[:member_token]
         exception = "Please provide a developer_public_key and member_token."
         raise TaskMapper::Exception.new(exception)
+      end
+
+      unless auth[:username]
+        raise TaskMapper::Exception.new("Please provide a username.")
       end
 
       provider.developer_public_key = auth[:developer_public_key]

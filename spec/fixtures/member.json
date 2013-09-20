@@ -1,0 +1,68 @@
+{
+  "id": "4ea4f9b1ad8ba68c10013887",
+  "avatarHash": "",
+  "bio": "",
+  "bioData": null,
+  "confirmed": true,
+  "fullName": "Test User",
+  "idPremOrgsAdmin": [
+
+  ],
+  "initials": "AS",
+  "memberType": "normal",
+  "products": [
+
+  ],
+  "status": "disconnected",
+  "url": "https:\/\/trello.com\/test_user",
+  "username": "test_user",
+  "avatarSource": "none",
+  "email": null,
+  "gravatarHash": "4490da1a9bfe605a1971632d1646635b",
+  "idBoards": [
+    "4ea4fa0cd791269d4e29a176",
+    "4ea4fd11fc8f1d3999192a7d",
+    "4f0b8693acbcd9212e362eae",
+    "4f0f2f4508f28652554231d2",
+    "4f1ef9220dc5a4633b3e9d9b",
+    "4f225e83ed560e771605d318",
+    "4f26e22814cd935006633fd9",
+    "4f2ac73accc68eeb0b24fc44"
+  ],
+  "idBoardsInvited": [
+
+  ],
+  "idBoardsPinned": [
+    "4f1ef9220dc5a4633b3e9d9b",
+    "4f225e83ed560e771605d318",
+    "4f26e22814cd935006633fd9"
+  ],
+  "idOrganizations": [
+    "4ee269e0c9feba4446044c2f"
+  ],
+  "idOrganizationsInvited": [
+
+  ],
+  "loginTypes": null,
+  "newEmail": null,
+  "oneTimeMessagesDismissed": [
+
+  ],
+  "prefs": {
+    "sendSummaries": true,
+    "minutesBetweenSummaries": 60,
+    "minutesBeforeDeadlineToNotify": 1440,
+    "colorBlind": false,
+    "timezoneInfo": {
+      "timezoneNext": "PST",
+      "dateNext": "2013-11-03T09:00:00.000Z",
+      "offsetNext": 480,
+      "timezoneCurrent": "PDT",
+      "offsetCurrent": 420
+    }
+  },
+  "trophies": [
+
+  ],
+  "uploadedAvatarHash": null
+}

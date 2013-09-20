@@ -1,13 +1,12 @@
 require 'spec_helper'
 
 describe TaskMapper::Provider::Trello do
-  let(:key) { "key" }
-  let(:token) { "token" }
   let(:tm) do
     TaskMapper.new(
       :trello,
       :developer_public_key => key,
-      :member_token => token
+      :member_token => token,
+      :username => username
     )
   end
 
@@ -20,7 +19,8 @@ describe TaskMapper::Provider::Trello do
       it "can be called explicitly as a provider" do
         tm = TaskMapper::Provider::Trello.new(
           :developer_public_key => key,
-          :member_token => token
+          :member_token => token,
+          :username => username
         )
         expect(tm).to be_a TaskMapper
       end
@@ -28,11 +28,21 @@ describe TaskMapper::Provider::Trello do
 
     context "with missing params" do
       it "raises an error" do
-        exception = "Please provide a developer_public_key and member_token."
-
         expect {
           TaskMapper.new(:trello, :developer_public_key => key)
-        }.to raise_error(TaskMapper::Exception, exception)
+        }.to raise_error(TaskMapper::Exception)
+      end
+    end
+
+    context "without a username" do
+      it "raises an error" do
+        expect {
+          TaskMapper.new(
+            :trello,
+            :developer_public_key => key,
+            :member_token => token
+          )
+        }.to raise_error(TaskMapper::Exception)
       end
     end
   end
