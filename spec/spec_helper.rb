@@ -11,16 +11,19 @@ def fixture_file(filename)
 end
 
 def key
-  "SECRET_KEY"
+  "test"
 end
 
 def token
-  "SECRET_TOKEN"
+  "test"
 end
 
 def username
   "test_user"
 end
+
+credentials_file = "#{File.dirname(__FILE__)}/credentials.rb"
+require(credentials_file) if File.exists?(credentials_file)
 
 def stub_request(method, url, filename, status=nil)
   options = {:body => ""}
