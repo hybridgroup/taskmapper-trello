@@ -1,14 +1,7 @@
 require 'spec_helper'
 
 describe TaskMapper::Provider::Trello do
-  let(:tm) do
-    TaskMapper.new(
-      :trello,
-      :developer_public_key => key,
-      :member_token => token,
-      :username => username
-    )
-  end
+  let(:tm) { create_instance }
 
   describe "#new" do
     context "with correct params" do

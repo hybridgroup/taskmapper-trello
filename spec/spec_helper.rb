@@ -40,6 +40,14 @@ def stub_post(*args); stub_request(:post, *args) end
 def stub_put(*args); stub_request(:put, *args) end
 def stub_delete(*args); stub_request(:delete, *args) end
 
+def create_instance
+  TaskMapper.new(
+    :trello,
+    :developer_public_key => key,
+    :member_token => token,
+    :username => username
+  )
+end
 
 RSpec.configure do |c|
   c.before do
@@ -49,3 +57,4 @@ RSpec.configure do |c|
     )
   end
 end
+

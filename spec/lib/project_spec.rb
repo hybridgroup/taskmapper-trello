@@ -8,16 +8,8 @@ describe TaskMapper::Provider::Trello::Project do
     )
   end
 
+  let(:tm) { create_instance }
   let(:project_class) { TaskMapper::Provider::Trello::Project }
-
-  let(:tm) do
-    TaskMapper.new(
-      :trello,
-      :developer_public_key => key,
-      :member_token => token,
-      :username => username
-    )
-  end
 
   describe "#project" do
     context "with a project ID" do
