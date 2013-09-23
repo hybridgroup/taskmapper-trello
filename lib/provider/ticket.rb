@@ -57,6 +57,18 @@ module TaskMapper::Provider
         card = card.first if card.is_a?(Array)
 
         self.merge!(card.attributes)
+        check_and_replace_attribute :desc, :description
+        check_and_replace_attribute :board_id, :project_id
+        check_and_replace_attribute :last_activity_date, :updated_at
+        set_status
+      end
+
+      def update
+        card = find_card
+        attrs = self.to_h
+        attrs['desc'] = attrs.delete('description')
+        attrs['board_id'] = attrs.delete('project_id')
+        card.update_fields(attrs).save
       end
 
       private
@@ -68,6 +80,12 @@ module TaskMapper::Provider
 
       def set_status
         self[:status] = (self[:closed] ? 'closed' : 'open')
+      end
+
+      def find_card
+        api = TaskMapper::Provider::Trello.api
+        board = api.boards.find { |b| b.id == project_id }
+        board.cards.find { |c| c.id == id }
       end
     end
   end

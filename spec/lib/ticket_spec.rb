@@ -62,5 +62,16 @@ describe TaskMapper::Provider::Trello::Ticket do
         expect(ticket.description).to eq "Desc"
       end
     end
+
+    describe "#save" do
+      let(:ticket) { project.tickets.first }
+
+      it "updates the ticket in Trello" do
+        expect_any_instance_of(::Trello::Card).to receive(:save)
+        ticket.name = "New Name!"
+        ticket.save
+        expect(ticket.name).to eq "New Name!"
+      end
+    end
   end
 end
