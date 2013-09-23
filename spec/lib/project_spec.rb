@@ -1,13 +1,6 @@
 require 'spec_helper'
 
 describe TaskMapper::Provider::Trello::Project do
-  before do
-    stub_get(
-      "https://api.trello.com/1/members/4ea4f9b1ad8ba68c10013887/boards?filter=all&key=#{key}&token=#{token}",
-      "boards.json"
-    )
-  end
-
   let(:tm) { create_instance }
   let(:project_class) { TaskMapper::Provider::Trello::Project }
 

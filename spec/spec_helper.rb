@@ -55,6 +55,20 @@ RSpec.configure do |c|
       "https://api.trello.com/1/members/#{username}?key=#{key}&token=#{token}",
       'member.json'
     )
+
+    stub_get(
+      "https://api.trello.com/1/members/4ea4f9b1ad8ba68c10013887/boards?filter=all&key=#{key}&token=#{token}",
+      "boards.json"
+    )
+
+    stub_get(
+      "https://api.trello.com/1/boards/4ea4fa0cd791269d4e29a176/cards?filter=open&key=#{key}&token=#{token}",
+      "cards.json"
+    )
+
+    stub_post(
+      "https://api.trello.com/1/cards?key=#{key}&token=#{token}",
+      'card.json'
+    )
   end
 end
-

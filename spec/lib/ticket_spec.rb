@@ -3,25 +3,53 @@ require 'spec_helper'
 describe TaskMapper::Provider::Trello::Ticket do
   let(:tm) { create_instance }
   let(:ticket_class) { TaskMapper::Provider::Trello::Ticket }
-  let(:project) { tm.project "4f1ef9220dc5a4633b3e9d9b" }
+  let(:project) { tm.project "4ea4fa0cd791269d4e29a176" }
 
   describe "#tickets" do
     context "with no arguments" do
-      it "returns all tickets"
+      let(:tickets) { project.tickets }
+      it "returns all tickets" do
+        expect(tickets).to be_an Array
+        expect(tickets).to_not be_empty
+        expect(tickets.first).to be_a ticket_class
+      end
     end
 
     context "with an array of IDs" do
-      it "returns the requested tickets"
+      let(:ids) { %w(4ea4fa0cd791269d4e29a198 4ea4fa0dd791269d4e29a1bd) }
+      let(:tickets) { project.tickets ids }
+
+      it "returns the requested tickets" do
+        expect(tickets).to be_an Array
+        expect(tickets.length).to eq 2
+        expect(tickets[0].id).to eq "4ea4fa0cd791269d4e29a198"
+        expect(tickets[1].id).to eq "4ea4fa0dd791269d4e29a1bd"
+      end
     end
 
     context "with a hash containing an ID" do
-      it "returns the requested ticket"
+      let(:tickets) { project.tickets(:id => '4ea4fa0cd791269d4e29a198' ) }
+
+      it "returns the requested ticket" do
+        expect(tickets).to be_an Array
+        expect(tickets.length).to eq 1
+        expect(tickets.first.id).to eq "4ea4fa0cd791269d4e29a198"
+      end
     end
   end
 
   describe "#ticket!" do
     context "with a title and description" do
-      it "creates a new ticket"
+      let(:ticket) do
+        project.ticket!(:name => "New Ticket", :description => "Desc")
+      end
+
+      it "creates a new ticket" do
+        expect(ticket).to be_a ticket_class
+        expect(ticket.name).to eq "New Ticket"
+        expect(ticket.desc).to eq "Desc"
+        expect(ticket.description).to eq "Desc"
+      end
     end
   end
 end

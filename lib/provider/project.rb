@@ -1,7 +1,6 @@
 module TaskMapper::Provider
   module Trello
     class Project < TaskMapper::Provider::Base::Project
-
       def initialize(*object)
         if object.first
           object = object.first
