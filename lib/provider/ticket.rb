@@ -31,6 +31,10 @@ module TaskMapper::Provider
       def initialize(*object)
         object = object.first if object.is_a? Array
         super object
+        check_and_replace_attribute :desc, :description
+        check_and_replace_attribute :board_id, :project_id
+        check_and_replace_attribute :last_activity_date, :updated_at
+        set_status
       end
 
       def save
@@ -53,6 +57,17 @@ module TaskMapper::Provider
         card = card.first if card.is_a?(Array)
 
         self.merge!(card.attributes)
+      end
+
+      private
+      def check_and_replace_attribute(base, target)
+        if self[base] && !self[target]
+          self[target] = self.delete(base)
+        end
+      end
+
+      def set_status
+        self[:status] = (self[:closed] ? 'closed' : 'open')
       end
     end
   end

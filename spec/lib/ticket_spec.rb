@@ -8,10 +8,21 @@ describe TaskMapper::Provider::Trello::Ticket do
   describe "#tickets" do
     context "with no arguments" do
       let(:tickets) { project.tickets }
+      let(:ticket) { project.tickets.first }
+
       it "returns all tickets" do
         expect(tickets).to be_an Array
         expect(tickets).to_not be_empty
-        expect(tickets.first).to be_a ticket_class
+        expect(ticket).to be_a ticket_class
+      end
+
+      it "contains the expected values" do
+        expect(ticket.id).to eq "4ea4fa0cd791269d4e29a198"
+        expect(ticket.name).to eq "This is a card."
+        expect(ticket.description).to eq "People can vote on cards."
+        expect(ticket.project_id).to eq project.id
+        expect(ticket.status).to eq 'open'
+        expect(ticket.updated_at).to_not be_nil
       end
     end
 
