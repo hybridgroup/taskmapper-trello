@@ -46,8 +46,8 @@ projects = trello.projects.find :all, ["board_id", "another_board_id"]
 
 ```ruby
 tickets = project.tickets # All open tickets
-tickets = project.tickets :all, :state => 'closed' # all closed tickets
-ticket = project.ticket 855
+tickets = project.tickets :all, :status => 'closed' # all closed tickets
+ticket = project.ticket "4ea4fa0dd791269d4e29a1b3"
 ```
 
 ### Opening A Ticket
