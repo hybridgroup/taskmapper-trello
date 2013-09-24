@@ -65,7 +65,7 @@ module TaskMapper::Provider
 
       def update
         card = find_card
-        attrs = self.to_h
+        attrs = Hash[self]
         attrs['desc'] = attrs.delete('description')
         attrs['board_id'] = attrs.delete('project_id')
         attrs['closed'] = (attrs.delete('status') == 'closed')
