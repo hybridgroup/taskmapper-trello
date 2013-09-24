@@ -54,8 +54,8 @@ ticket = project.ticket 855
 
 ```ruby
 ticket = project.ticket!(
-  :title => "New Ticket"
-  :body => "Content of the new ticket."
+  :name => "New Ticket"
+  :description => "Content of the new ticket."
 )
 ```
 
@@ -74,32 +74,23 @@ ticket.reopen
 ### Updating Tickets
 
 ```ruby
-ticket.title = "Updated Title"
-ticket.body = "New body"
+ticket.name = "Updated name"
+ticket.description = "New description"
 ticket.save
-```
-
-### Finding Ticket Comments
-
-```ruby
-comments = ticket.comments
-```
-
-### Adding a Comment to a Ticket
-
-```ruby
-ticket.comment! "Your Comment Goes Here"
 ```
 
 ## Dependencies
 
 - rubygems
-- taskmapper
-- ruby-trello
+- [taskmapper][]
+- [ruby-trello][]
 
 ## Notes
 
-This gem is currently WIP and may not have full functionality.
+The Trello API does not currently support fetching comments for tickets/cards.
+As such, the `taskmapper-trello` gem does not provide comment functionality for
+tickets right now. If the API changes to allow this, we'll update
+`taskmapper-trello` to match.
 
 If you run into any issues, please feel free to open an issue or pull request.
 
@@ -122,3 +113,4 @@ contributors to get started.
 
 [TaskMapper]: http://ticketrb.com
 [Trello]: http://trello.com
+[ruby-trello]: https://github.com/jeremytregunna/ruby-trello
