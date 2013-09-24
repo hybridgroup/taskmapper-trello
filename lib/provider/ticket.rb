@@ -68,7 +68,13 @@ module TaskMapper::Provider
         attrs = self.to_h
         attrs['desc'] = attrs.delete('description')
         attrs['board_id'] = attrs.delete('project_id')
+        attrs['closed'] = (attrs.delete('status') == 'closed')
         card.update_fields(attrs).save
+      end
+
+      def close
+        self.status = 'closed'
+        update
       end
 
       private

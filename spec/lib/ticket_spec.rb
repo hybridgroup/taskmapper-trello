@@ -62,7 +62,9 @@ describe TaskMapper::Provider::Trello::Project do
         expect(ticket.description).to eq "Desc"
       end
     end
+  end
 
+  describe "#ticket" do
     describe "#save" do
       let(:ticket) { project.tickets.first }
 
@@ -71,6 +73,20 @@ describe TaskMapper::Provider::Trello::Project do
         ticket.name = "New Name!"
         ticket.save
         expect(ticket.name).to eq "New Name!"
+      end
+    end
+
+    describe "#close" do
+      let(:ticket) { project.tickets.first }
+
+      before do
+        expect_any_instance_of(::Trello::Card).to receive(:save)
+      end
+
+      it "updates the status and saves the ticket" do
+        expect(ticket.status).to eq "open"
+        ticket.close
+        expect(ticket.status).to eq 'closed'
       end
     end
   end
