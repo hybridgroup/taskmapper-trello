@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TaskMapper::Provider::Trello::Ticket do
+describe TaskMapper::Provider::Trello::Project do
   let(:tm) { create_instance }
   let(:ticket_class) { TaskMapper::Provider::Trello::Ticket }
   let(:project) { tm.project "4ea4fa0cd791269d4e29a176" }

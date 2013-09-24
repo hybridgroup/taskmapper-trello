@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TaskMapper::Provider::Trello::Comment do
+describe TaskMapper::Provider::Trello::Ticket do
   let(:tm) { create_instance }
   let(:comment_class) { TaskMapper::Provider::Trello::Comment }
   let(:project) { tm.project "4ea4fa0cd791269d4e29a176" }
