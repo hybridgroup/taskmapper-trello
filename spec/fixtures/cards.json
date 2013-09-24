@@ -525,7 +525,7 @@
     "checkItemStates": [
       
     ],
-    "closed": false,
+    "closed": true,
     "dateLastActivity": "2013-07-05T15:32:27.175Z",
     "desc": "",
     "descData": null,

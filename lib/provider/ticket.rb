@@ -77,6 +77,11 @@ module TaskMapper::Provider
         update
       end
 
+      def reopen
+        self.status = 'open'
+        update
+      end
+
       private
       def check_and_replace_attribute(base, target)
         if self[base] && !self[target]

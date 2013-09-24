@@ -89,5 +89,19 @@ describe TaskMapper::Provider::Trello::Project do
         expect(ticket.status).to eq 'closed'
       end
     end
+
+    describe "#reopen" do
+      let(:ticket) { project.tickets.last }
+
+      before do
+        expect_any_instance_of(::Trello::Card).to receive(:save)
+      end
+
+      it "updates the status and saves the ticket" do
+        expect(ticket.status).to eq "closed"
+        ticket.reopen
+        expect(ticket.status).to eq 'open'
+      end
+    end
   end
 end
